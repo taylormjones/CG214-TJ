@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <body>
+     
+        
+    <style>
+    body {  font-style:oblique;
+            text-align: center;
+            font-size: 50px;
+            
+                background-color: chocolate;
+            }
+        
+    <title> Unapologetic
+        By Taylor Jones</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Unapologetic */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/8 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: chocolate;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: color=orange;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<h2>Unapologetic By Taylor Jones</h2>
+<p>The life of an artist is a continuous journey, the path long and never ending-Justin Beckett:</p>
+
+    <div> <p> <h4><a href="Home.html"</a>Home</h4</p>
+
+<p> <h4><a href="Bio&Info.html"</a>Bio</h4</p>
+        
+<p> <h4><a href="Music.html"</a>Music</h4</p>
+    
+    </div>     
+ <br>   
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="image1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="image10.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="image13.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<br>
+ 
+    <div class="mySlides fade">
+  <div class="numbertext">4/ 8</div>
+  <img src="image2.png" style="width:100%">
+  <div class="text">Caption Four</div>
+</div>  
+     
+   <div class="mySlides fade">
+  <div class="numbertext">5/ 8</div>
+  <img src="image27.png" style="width:100%">
+  <div class="text">Caption Five</div>
+</div>  
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">6/ 8</div>
+  <img src="image15.png" style="width:100%">
+  <div class="text">Caption Six</div>   
+    
+   <div class="mySlides fade">
+  <div class="numbertext">7/ 8</div>
+  <img src="image29.png" style="width:100%">
+  <div class="text">Caption Seven</div>   
+       
+  <div class="mySlides fade">
+  <div class="numbertext">8/ 8</div>
+  <img src="image17.png" style="width:100%">
+  <div class="text">Caption Eight</div>   
+     
+    
+     <br>
+    <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+ <span class="dot"></span> 
+  <span class="dot"></span>         
+</div>
+       </div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    </style>
+     
+    
+</body>
+</html> 
